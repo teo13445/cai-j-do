@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Trắc Nghiệm Khoa Học</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Quiz Trắc Nghiệm Khoa Học</h1>
+        <div id="question-container">
+            <p id="question"></p>
+            <ul id="answer-buttons">
+                <li><button class="answer-btn" onclick="selectAnswer(0)"></button></li>
+                <li><button class="answer-btn" onclick="selectAnswer(1)"></button></li>
+                <li><button class="answer-btn" onclick="selectAnswer(2)"></button></li>
+                <li><button class="answer-btn" onclick="selectAnswer(3)"></button></li>
+            </ul>
+        </div>
+        <div id="timer">Thời gian còn lại: <span id="time-left">15</span>s</div>
+        <div id="result-container"></div>
+        <button id="next-button" onclick="nextQuestion()">Câu Tiếp Theo</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
